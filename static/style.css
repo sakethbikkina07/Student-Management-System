@@ -1,0 +1,145 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+/* Heading */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus {
+    box-shadow: 0 0 5px #00c6ff;
+}
+
+/* Buttons */
+button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #00c6ff;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #0072ff;
+    transform: scale(1.05);
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #00c6ff;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Action Buttons */
+.action-btn {
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.edit-btn {
+    background: #28a745;
+}
+
+.delete-btn {
+    background: #dc3545;
+}
+
+.edit-btn:hover {
+    background: #218838;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+/* Center small links */
+.center-text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.error {
+    color: #ff6b6b;
+    margin-bottom: 15px;
+    text-align: center;
+}

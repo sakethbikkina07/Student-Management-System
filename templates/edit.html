@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Management System</h2>
+        <h1>Edit Student</h1>
+
+        {% if error %}
+        <div class="error">{{ error }}</div>
+        {% endif %}
+
+        <form method="POST">
+            <input type="text" name="name" value="{{ student[0] }}" placeholder="Name" required>
+            <input type="number" name="age" value="{{ student[1] }}" placeholder="Age" min="1" required>
+            <input type="text" name="course" value="{{ student[2] }}" placeholder="Course" required>
+            <button type="submit">Update</button>
+        </form>
+
+        <div class="center-text">
+            <p><a href="/view">Back to Students</a></p>
+        </div>
+    </div>
+</body>
+</html>
